@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/slack', (req, res) => {
-  var destination = "auth-swift://oauth-callback" + req.originalUrl
+  var destination = "auth-swift://oauth-callback" + req.originalUrl;
   console.log(`redirecting ${req} to ${destination}`);
   res.send(`
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ app.get('/slack', (req, res) => {
         </script>
     </body>
 </html>
-  `)
+  `);
   //res.redirect("auth-swift://oauth-callback" + req.originalUrl);
 });
 
