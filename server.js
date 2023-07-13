@@ -14,7 +14,7 @@ app.get('/slack', (req, res) => {
 
     <body>
         <div>
-            Taking you to Instagram...
+            Taking you back to app...
         </div>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
         <script type="text/javascript">
